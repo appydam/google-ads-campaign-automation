@@ -1,0 +1,298 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Google Ads Search Campaign Configuration",
+  "description": "Complete campaign config for Google Ads API (v14)",
+  "version": "1.0.0",
+  "required_dependencies": ["Ghost ad copy deliverables"],
+  
+  "account": {
+    "customer_id": "[REPLACE_WITH_YOUR_CUSTOMER_ID]",
+    "login_customer_id": "[REPLACE_IF_USING_MCC]",
+    "time_zone": "America/Los_Angeles",
+    "currency_code": "USD"
+  },
+  
+  "campaign": {
+    "name": "[Product] - Search - Branded",
+    "status": "PAUSED",
+    "advertising_channel_type": "SEARCH",
+    "advertising_channel_sub_type": null,
+    
+    "budget": {
+      "name": "[Product] Search Campaign Budget",
+      "amount_micros": 50000000,
+      "delivery_method": "STANDARD"
+    },
+    
+    "bidding_strategy": {
+      "type": "MAXIMIZE_CONVERSIONS",
+      "target_cpa_micros": null
+    },
+    
+    "network_settings": {
+      "target_google_search": true,
+      "target_search_network": false,
+      "target_content_network": false,
+      "target_partner_search_network": false
+    },
+    
+    "geo_target_type_setting": {
+      "positive_geo_target_type": "PRESENCE_OR_INTEREST",
+      "negative_geo_target_type": "PRESENCE"
+    },
+    
+    "geo_targeting": {
+      "location_ids": [2840],
+      "location_names": ["United States"]
+    },
+    
+    "language_targeting": {
+      "language_constants": ["languageConstants/1000"]
+    },
+    
+    "start_date": "2026-03-20",
+    "end_date": null
+  },
+  
+  "ad_groups": [
+    {
+      "name": "Core Product Keywords",
+      "status": "ENABLED",
+      "type": "SEARCH_STANDARD",
+      "cpc_bid_micros": 5000000,
+      
+      "keywords": [
+        {
+          "text": "[PLACEHOLDER - awaiting Ghost deliverable]",
+          "match_type": "EXACT"
+        },
+        {
+          "text": "[PLACEHOLDER - awaiting Ghost deliverable]",
+          "match_type": "PHRASE"
+        },
+        {
+          "text": "[PLACEHOLDER - awaiting Ghost deliverable]",
+          "match_type": "EXACT"
+        },
+        {
+          "text": "[PLACEHOLDER - awaiting Ghost deliverable]",
+          "match_type": "PHRASE"
+        },
+        {
+          "text": "[PLACEHOLDER - awaiting Ghost deliverable]",
+          "match_type": "EXACT"
+        }
+      ],
+      
+      "negative_keywords": [
+        {
+          "text": "free",
+          "match_type": "BROAD"
+        },
+        {
+          "text": "cheap",
+          "match_type": "BROAD"
+        },
+        {
+          "text": "discount",
+          "match_type": "BROAD"
+        },
+        {
+          "text": "coupon",
+          "match_type": "BROAD"
+        },
+        {
+          "text": "alternative",
+          "match_type": "PHRASE"
+        },
+        {
+          "text": "vs",
+          "match_type": "BROAD"
+        },
+        {
+          "text": "review",
+          "match_type": "BROAD"
+        },
+        {
+          "text": "reviews",
+          "match_type": "BROAD"
+        },
+        {
+          "text": "job",
+          "match_type": "BROAD"
+        },
+        {
+          "text": "jobs",
+          "match_type": "BROAD"
+        },
+        {
+          "text": "career",
+          "match_type": "BROAD"
+        },
+        {
+          "text": "salary",
+          "match_type": "BROAD"
+        },
+        {
+          "text": "training",
+          "match_type": "BROAD"
+        },
+        {
+          "text": "course",
+          "match_type": "BROAD"
+        },
+        {
+          "text": "tutorial",
+          "match_type": "BROAD"
+        },
+        {
+          "text": "how to",
+          "match_type": "PHRASE"
+        },
+        {
+          "text": "diy",
+          "match_type": "BROAD"
+        },
+        {
+          "text": "used",
+          "match_type": "BROAD"
+        },
+        {
+          "text": "refurbished",
+          "match_type": "BROAD"
+        },
+        {
+          "text": "open box",
+          "match_type": "PHRASE"
+        }
+      ],
+      
+      "responsive_search_ads": [
+        {
+          "headlines": [
+            "[PLACEHOLDER - awaiting Ghost deliverable - headline 1]",
+            "[PLACEHOLDER - awaiting Ghost deliverable - headline 2]",
+            "[PLACEHOLDER - awaiting Ghost deliverable - headline 3]",
+            "[PLACEHOLDER - awaiting Ghost deliverable - headline 4]",
+            "[PLACEHOLDER - awaiting Ghost deliverable - headline 5]",
+            "[PLACEHOLDER - awaiting Ghost deliverable - headline 6]",
+            "[PLACEHOLDER - awaiting Ghost deliverable - headline 7]",
+            "[PLACEHOLDER - awaiting Ghost deliverable - headline 8]",
+            "[PLACEHOLDER - awaiting Ghost deliverable - headline 9]",
+            "[PLACEHOLDER - awaiting Ghost deliverable - headline 10]",
+            "[PLACEHOLDER - awaiting Ghost deliverable - headline 11]",
+            "[PLACEHOLDER - awaiting Ghost deliverable - headline 12]",
+            "[PLACEHOLDER - awaiting Ghost deliverable - headline 13]",
+            "[PLACEHOLDER - awaiting Ghost deliverable - headline 14]",
+            "[PLACEHOLDER - awaiting Ghost deliverable - headline 15]"
+          ],
+          "descriptions": [
+            "[PLACEHOLDER - awaiting Ghost deliverable - description 1]",
+            "[PLACEHOLDER - awaiting Ghost deliverable - description 2]",
+            "[PLACEHOLDER - awaiting Ghost deliverable - description 3]",
+            "[PLACEHOLDER - awaiting Ghost deliverable - description 4]"
+          ],
+          "final_urls": ["https://example.com/landing-page"],
+          "path1": "product",
+          "path2": "features"
+        },
+        {
+          "headlines": [
+            "[PLACEHOLDER - awaiting Ghost deliverable - alt headline 1]",
+            "[PLACEHOLDER - awaiting Ghost deliverable - alt headline 2]",
+            "[PLACEHOLDER - awaiting Ghost deliverable - alt headline 3]",
+            "[PLACEHOLDER - awaiting Ghost deliverable - alt headline 4]",
+            "[PLACEHOLDER - awaiting Ghost deliverable - alt headline 5]",
+            "[PLACEHOLDER - awaiting Ghost deliverable - alt headline 6]",
+            "[PLACEHOLDER - awaiting Ghost deliverable - alt headline 7]",
+            "[PLACEHOLDER - awaiting Ghost deliverable - alt headline 8]",
+            "[PLACEHOLDER - awaiting Ghost deliverable - alt headline 9]",
+            "[PLACEHOLDER - awaiting Ghost deliverable - alt headline 10]",
+            "[PLACEHOLDER - awaiting Ghost deliverable - alt headline 11]",
+            "[PLACEHOLDER - awaiting Ghost deliverable - alt headline 12]",
+            "[PLACEHOLDER - awaiting Ghost deliverable - alt headline 13]",
+            "[PLACEHOLDER - awaiting Ghost deliverable - alt headline 14]",
+            "[PLACEHOLDER - awaiting Ghost deliverable - alt headline 15]"
+          ],
+          "descriptions": [
+            "[PLACEHOLDER - awaiting Ghost deliverable - alt description 1]",
+            "[PLACEHOLDER - awaiting Ghost deliverable - alt description 2]",
+            "[PLACEHOLDER - awaiting Ghost deliverable - alt description 3]",
+            "[PLACEHOLDER - awaiting Ghost deliverable - alt description 4]"
+          ],
+          "final_urls": ["https://example.com/landing-page"],
+          "path1": "solutions",
+          "path2": "pricing"
+        }
+      ],
+      
+      "ad_extensions": {
+        "sitelinks": [
+          {
+            "link_text": "[PLACEHOLDER - awaiting Ghost deliverable]",
+            "final_urls": ["https://example.com/features"],
+            "description1": "[PLACEHOLDER - awaiting Ghost deliverable]",
+            "description2": "[PLACEHOLDER - awaiting Ghost deliverable]"
+          },
+          {
+            "link_text": "[PLACEHOLDER - awaiting Ghost deliverable]",
+            "final_urls": ["https://example.com/pricing"],
+            "description1": "[PLACEHOLDER - awaiting Ghost deliverable]",
+            "description2": "[PLACEHOLDER - awaiting Ghost deliverable]"
+          },
+          {
+            "link_text": "[PLACEHOLDER - awaiting Ghost deliverable]",
+            "final_urls": ["https://example.com/demo"],
+            "description1": "[PLACEHOLDER - awaiting Ghost deliverable]",
+            "description2": "[PLACEHOLDER - awaiting Ghost deliverable]"
+          },
+          {
+            "link_text": "[PLACEHOLDER - awaiting Ghost deliverable]",
+            "final_urls": ["https://example.com/support"],
+            "description1": "[PLACEHOLDER - awaiting Ghost deliverable]",
+            "description2": "[PLACEHOLDER - awaiting Ghost deliverable]"
+          }
+        ],
+        
+        "callouts": [
+          "[PLACEHOLDER - awaiting Ghost deliverable - callout 1]",
+          "[PLACEHOLDER - awaiting Ghost deliverable - callout 2]",
+          "[PLACEHOLDER - awaiting Ghost deliverable - callout 3]",
+          "[PLACEHOLDER - awaiting Ghost deliverable - callout 4]",
+          "[PLACEHOLDER - awaiting Ghost deliverable - callout 5]",
+          "[PLACEHOLDER - awaiting Ghost deliverable - callout 6]"
+        ],
+        
+        "structured_snippets": [
+          {
+            "header": "AMENITIES",
+            "values": [
+              "[PLACEHOLDER - awaiting Ghost deliverable]",
+              "[PLACEHOLDER - awaiting Ghost deliverable]",
+              "[PLACEHOLDER - awaiting Ghost deliverable]",
+              "[PLACEHOLDER - awaiting Ghost deliverable]"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  
+  "conversion_tracking": {
+    "conversion_action_name": "Lead Signup",
+    "category": "LEAD",
+    "value": 1.0,
+    "currency_code": "USD",
+    "always_use_default_value": true,
+    "counting_type": "ONE_PER_CLICK"
+  },
+  
+  "notes": {
+    "setup_instructions": "1. Replace [PLACEHOLDER] values with actual content from Ghost ad copy deliverables. 2. Update customer_id and final_urls. 3. Run validation script before execution. 4. Campaign starts PAUSED - review all settings before enabling.",
+    "blockers": [
+      "Awaiting Ghost ad copy deliverables for headlines, descriptions, keywords, sitelinks, callouts",
+      "Final landing page URL needs to be confirmed",
+      "Conversion tracking code must be installed on website before launch"
+    ]
+  }
+}
